@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body">
+        <div class="pull-left">
+            <h4 class="list-group-item-heading">{{user?.lastName}} {{user?.firstName}}</h4>
+        </div>
+        <div class="pull-right">
+            <p class="list-group-item-text">{{user?.email}}</p>
+        </div>
+      <a href="#" class="btn btn-primary" (click)="onDetailsClick(user)">See details</a>
+    </div>
+  </div>

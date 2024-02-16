@@ -1,0 +1,24 @@
+<a href="#" class="product-container">
+    <div id="product-carousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active" *ngFor="let image of product.images">
+                <img src="{{image}}" style="height: 300px; width: 300px;">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#product-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#product-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-product-details">
+        <h1>{{product.title}}</h1>
+        <h6>{{product.description}}</h6>
+        <h6>{{product.price}}</h6>
+    </div>
+
+</a>

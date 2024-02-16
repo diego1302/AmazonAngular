@@ -1,0 +1,25 @@
+<div class="container text-center">
+  <div class="row align-items-start"> 
+    <!-- contains list of users -->
+    <div class="col-9">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let item of users"> 
+          <app-user-cards [user]="item" (userSelected)="onUserSelected($event)"></app-user-cards>
+        </div>
+      </div>
+      <div class="container-foot">
+        <div class="container text-center">
+          helloooooo this space if for pagination
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <app-user-details [displayUserSelected]="userToDisplay"></app-user-details> <!-- Moved app-user-details to the top -->
+    </div>
+  </div>
+</div>
+
+
+
+
+

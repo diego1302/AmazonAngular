@@ -1,0 +1,30 @@
+<div class="container-categories text-left row">
+    <div class="row" >
+        <div class="row">
+            <div class="container-categories col-2" *ngFor="let item of categories ">
+                <app-product-category 
+                    [category]="item"
+                ></app-product-category>
+            </div>
+        </div>
+    </div>
+    <div>
+        <app-product-details 
+            [productSelected]="productWasSelected"
+            [acitivateModal]="showDetailsProduct"
+            
+        ></app-product-details>
+    </div>
+
+    <div class="scrollable-div col col-md-10">
+        <div class="row">
+            <div class="container-product col-4" *ngFor="let item of products">
+                <app-product-card 
+                    [product]="item"
+                    (click)="onProductSelectionDetails(item)"
+                ></app-product-card>
+            </div>
+        </div>
+    </div>
+</div>
+

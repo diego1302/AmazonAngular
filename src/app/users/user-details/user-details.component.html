@@ -1,0 +1,48 @@
+<div class="card" style="width: 18rem" *ngIf="displayUserSelected">
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body">
+        <div class="pull-left">
+            <h4 class="list-group-item-heading">Full name: {{displayUserSelected?.lastName}} {{displayUserSelected?.firstName}}</h4>
+        </div>
+        <div class="pull-right">
+            <p class="list-group-item-text">Email: {{displayUserSelected?.email}}</p>
+        </div>
+        <div class="pull-right">
+            <p class="list-group-item-text">Age: {{displayUserSelected?.age}}</p>
+            <p class="list-group-item-text">Gender: {{displayUserSelected?.gender}}</p>
+            <p class="list-group-item-text">Phone: {{ displayUserSelected?.phone }}</p>
+            <p class="list-group-item-text">Username: {{ displayUserSelected?.username }}</p>
+            <p class="list-group-item-text">Birth Date: {{ displayUserSelected?.birthDate }}</p>
+            <p class="list-group-item-text">Blood Group: {{ displayUserSelected?.bloodGroup }}</p>
+            <p class="list-group-item-text">Height: {{ displayUserSelected?.height }}</p>
+            <p class="list-group-item-text">Weight: {{ displayUserSelected?.weight }}</p>
+            <p class="list-group-item-text">Eye Color: {{ displayUserSelected?.eyeColor }}</p>
+            <p class="list-group-item-text">Hair Color: {{ displayUserSelected?.hair?.color }}</p>
+            <p class="list-group-item-text">Hair Type: {{ displayUserSelected?.hair?.type }}</p>
+            <p class="list-group-item-text">Domain: {{ displayUserSelected?.domain }}</p>
+            <p class="list-group-item-text">IP Address: {{ displayUserSelected?.ip }}</p>
+            <p class="list-group-item-text">Address: {{ displayUserSelected?.address?.address }}</p>
+            <p class="list-group-item-text">City: {{ displayUserSelected?.address?.city }}</p>
+            <p class="list-group-item-text">Postal Code: {{ displayUserSelected?.address?.postalCode }}</p>
+            <p class="list-group-item-text">State: {{ displayUserSelected?.address?.state }}</p>
+            <p class="list-group-item-text">MAC Address: {{ displayUserSelected?.macAddress }}</p>
+            <p class="list-group-item-text">University: {{ displayUserSelected?.university }}</p>
+            <p class="list-group-item-text">Card Expire: {{ displayUserSelected?.bank?.cardExpire }}</p>
+            <p class="list-group-item-text">Card Number: {{ displayUserSelected?.bank?.cardNumber }}</p>
+            <p class="list-group-item-text">Card Type: {{ displayUserSelected?.bank?.cardType }}</p>
+            <p class="list-group-item-text">Currency: {{ displayUserSelected?.bank?.currency }}</p>
+            <p class="list-group-item-text">IBAN: {{ displayUserSelected?.bank?.iban }}</p>
+            <p class="list-group-item-text">Company Name: {{ displayUserSelected?.company?.name }}</p>
+            <p class="list-group-item-text">Department: {{ displayUserSelected?.company?.department }}</p>
+            <p class="list-group-item-text">Title: {{ displayUserSelected?.company?.title }}</p>
+            <p class="list-group-item-text">Company Address: {{ displayUserSelected?.company?.address?.address }}</p>
+            <p class="list-group-item-text">Company City: {{ displayUserSelected?.company?.address?.city }}</p>
+            <p class="list-group-item-text">Company Postal Code: {{ displayUserSelected?.company?.address?.postalCode }}</p>
+            <p class="list-group-item-text">Company State: {{ displayUserSelected?.company?.address?.state }}</p>
+            <p class="list-group-item-text">EIN: {{ displayUserSelected?.ein }}</p>
+            <p class="list-group-item-text">SSN: {{ displayUserSelected?.ssn }}</p>
+            <p class="list-group-item-text">User Agent: {{ displayUserSelected?.userAgent }}</p>
+        </div>
+      
+    </div>
+  </div>

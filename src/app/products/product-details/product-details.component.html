@@ -1,40 +1,28 @@
-<div class="alert alert-primary" role="alert" [style.display]="acitivateModal ? 'none' : 'block'">
-    A simple primary alert—check it out!
+<div>
+    <div class="card">
+       <div class="carousel-inner">
+            <div class="carousel-item active" *ngFor="let image of productSelected.images">
+                <img src="{{image}}" style="height: 300px; width: 300px;">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#product-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#product-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title">{{productSelected.title}}</h1>
+          <p class="product-description">{{productSelected.description}}</p>
+          <h3>{{productSelected.category}}</h3>
+          <h3>${{productSelected.price}} AUD</h3>
+        </div>
+        <a href="#" class="btn btn-primary" (click)="onSelection()">Go back</a>
+    </div>
 </div>
 
 
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" [style.display]="acitivateModal ? 'none' : 'block'">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-</div> -->
+<!-- https://ng-bootstrap.github.io/#/guides/animations -->
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>

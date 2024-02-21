@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Product } from '../products.model';
 
 
@@ -11,13 +11,17 @@ export class ProductDetailsComponent {
 
   @Input() productSelected: Product;
   @Input() acitivateModal: boolean;
-
+  @Output() goBackDetails = new EventEmitter<void>();
+  
   /**
    *
    */
   constructor() {
     
-    
+  }
+
+  onSelection(){
+    this.goBackDetails.emit()
   }
   
  

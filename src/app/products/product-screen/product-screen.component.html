@@ -8,15 +8,18 @@
             </div>
         </div>
     </div>
-    <div>
-        <app-product-details 
-            [productSelected]="productWasSelected"
-            [acitivateModal]="showDetailsProduct"
-            
-        ></app-product-details>
+    
+    <div *ngIf="showDetailsProduct !== true"> 
+        <div>
+            <app-product-details 
+                [productSelected]="productWasSelected"
+                [acitivateModal]="showDetailsProduct"
+                (click)="onDisplayProductsAgain()"
+            ></app-product-details>
+        </div>        
     </div>
-
-    <div class="scrollable-div col col-md-10">
+    
+    <div class="scrollable-div col col-md-10" *ngIf="showDetailsProduct === true">
         <div class="row">
             <div class="container-product col-4" *ngFor="let item of products">
                 <app-product-card 
@@ -26,5 +29,6 @@
             </div>
         </div>
     </div>
+    
 </div>
 

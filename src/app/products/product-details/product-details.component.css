@@ -1,0 +1,13 @@
+.card{
+    justify-content: center;
+    width: 800px;
+}
+
+.product-description {
+    /* Adjust the width and height as needed */
+    width: 100%;
+    min-height: 50px; /* Example height */
+    overflow: visible;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

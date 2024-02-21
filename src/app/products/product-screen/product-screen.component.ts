@@ -44,12 +44,14 @@ export class ProductScreenComponent implements OnInit {
     } else {
       this.showDetailsProduct = true;
     }
+  }
 
-    // if(this.showDetailsProduct === 'none'){
-    //   this.showDetailsProduct = 'block';
-    // } else {
-    //   this.showDetailsProduct = 'none';
-    // }
+  onDisplayProductsAgain(){
+    if(this.showDetailsProduct === true){
+      this.showDetailsProduct = false;
+    } else {
+      this.showDetailsProduct = true;
+    }
   }
 
   fetchProductData(): void{

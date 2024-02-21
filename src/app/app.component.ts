@@ -9,7 +9,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Amazon';
-  loadedFeature = 'products';
+  loadedFeature = 'users2';
 
   onNavigate(feature: string){
     this.loadedFeature = feature;

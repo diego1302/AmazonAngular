@@ -6,6 +6,7 @@ import { UserCardsComponent, UsersModule } from "./users";
 import { HttpClientModule } from "@angular/common/http";
 import { ProductsModule } from "./products/products.module";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { Users2Module } from "./users2/users2.module";
 
 
 
@@ -21,6 +22,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
       BrowserModule,
       UsersModule,
       ProductsModule,
+      Users2Module,
       HttpClientModule
       
            
